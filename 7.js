@@ -9,5 +9,5 @@ function Area_Triangle() {
         Math.abs(perimeter - s2) *
         Math.abs(perimeter - s3))
   );
-  document.getElementById("a").innerHTML = area;
+  document.getElementById("a").innerHTML = "Area of the triangle is " + area;
 }
