@@ -8,17 +8,19 @@
   <script type="text/javascript" src="10.js"></script>
 </head>
 
-<body>
+<body style="margin: 25px; font-size: 20px; font-family: 'Arial Unicode MS', sans-serif;">
+  <p id="title" style="font-size: 25px; font-family: 'Arial Black', sans-serif;">Sort String in Alphabetical Order</p>
   <table>
     <tr>
       <td>Please enter any string:</td>
-      <td><input type="text" id="str" name="str" style="width: 100px;" /></td>
+      <td><input type="text" id="str" name="str" style="width: 200px;" /></td>
     </tr>
     <tr>
       <td colspan="2" align="center"><button style="width: 80px;" onclick="Sort_String()">Sort</button></td>
     </tr>
     <tr>
-      <td colspan="2" align="center">Characters of the string in alphabetical order are <div id="result"></div>
+      <td colspan="2" align="center">
+        <p id="result"></p>
       </td>
     </tr>
   </table>

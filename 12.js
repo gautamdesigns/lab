@@ -8,5 +8,7 @@ function CountVowel() {
       vcount += 1;
     }
   }
-  document.getElementById("result").innerHTML = vcount;
+
+  document.getElementById("result").innerHTML =
+    "Number of vowels within the sentence is : " + vcount;
 }
