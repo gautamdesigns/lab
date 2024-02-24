@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kohli Family</title>
         <style>
+            body {
+                background-color: #000000;
+                padding: 0;
+                margin: 2vw;
+                text-align: center;
+            }
             .family-section {
                 display: flex;
                 justify-content: space-around;
@@ -22,109 +28,85 @@
                     flex: 0 0 calc(50% - 4vw);
                 }
             }
-
             img {
                 width: 20vw;
                 height: auto;
+                border: 10px double #ffffff;
+                border-radius: 50%;
+            }
+            h1 {
+                font-family: "Cooper", sans-serif;
+                font-size: 50px;
+                color: #ffff00;
+            }
+            .family-member p {
+                font-family: "Cooper", sans-serif;
+                font-size: 18px;
+            }
+            .family-member a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+            .family-member a:hover {
+                color: #ff0000;
+            }
+            hr {
+                margin: 0 auto;
+            }
+            h2 {
+                font-family: "Cooper", sans-serif;
+                font-size: 50px;
+                color: #ec0cf0;
+            }
+            p.discover-text {
+                font-family: "Lucida Calligraphy", sans-serif;
+                font-size: 25px;
+                color: #ff4500;
+            }
+            p.address-heading {
+                font-family: "Cooper", sans-serif;
+                font-size: 50px;
+                color: #22b322;
+            }
+            p.address {
+                font-family: "Times New Roman", sans-serif;
+                font-size: 25px;
+                color: #e4e6eb;
             }
         </style>
     </head>
 
-    <body style="margin: 25px; text-align: center">
-        <h1
-            style="
-                font-family: 'Cooper', sans-serif;
-                font-size: 50px;
-                color: #003366;
-            ">
-            Welcome to the Kohli Family Website
-        </h1>
+    <body>
+        <h1>Welcome to the Kohli Family</h1>
         <br /><br />
         <div class="family-section">
             <div class="family-member">
                 <img
                     src="https://github.com/gautamdesigns/lab/blob/main/virat.png?raw=true"
                     alt="Virat Kohli"
-                    usemap="#viratMap"
-                    style="border: 10px double #000000; border-radius: 50%" />
-                <p
-                    style="
-                        font-family: 'Cooper', sans-serif;
-                        font-size: 18px;
-                        color: #333333;
-                    ">
-                    <a
-                        href="virat.html"
-                        style="color: #000000; text-decoration: none"
-                        onmouseover="this.style.color='#ff0000'"
-                        onmouseout="this.style.color='#000000'"
-                        >Virat Kohli</a
-                    >
-                </p>
+                    usemap="#viratMap" />
+                <p><a href="virat.html">Virat Kohli</a></p>
             </div>
-
             <div class="family-member">
                 <img
                     src="https://github.com/gautamdesigns/lab/blob/main/vamika.png?raw=true"
                     alt="Vamika"
-                    usemap="#vamikaMap"
-                    style="border: 10px double #000000; border-radius: 50%" />
-                <p
-                    style="
-                        font-family: 'Cooper', sans-serif;
-                        font-size: 18px;
-                        color: #333333;
-                    ">
-                    <a
-                        href="vamika.html"
-                        style="color: #000000; text-decoration: none"
-                        onmouseover="this.style.color='#ff0000'"
-                        onmouseout="this.style.color='#000000'"
-                        >Vamika</a
-                    >
-                </p>
+                    usemap="#vamikaMap" />
+                <p><a href="vamika.html">Vamika Kohli</a></p>
             </div>
             <div class="family-member">
                 <img
                     src="https://github.com/gautamdesigns/lab/blob/main/akaay.png?raw=true"
                     alt="Akaay"
-                    usemap="#akaayMap"
-                    style="border: 10px double #000000; border-radius: 50%" />
-                <p
-                    style="
-                        font-family: 'Cooper', sans-serif;
-                        font-size: 18px;
-                        color: #333333;
-                    ">
-                    <a
-                        href="self.html"
-                        style="color: #000000; text-decoration: none"
-                        onmouseover="this.style.color='#ff0000'"
-                        onmouseout="this.style.color='#000000'"
-                        >Akaay</a
-                    >
-                </p>
+                    usemap="#akaayMap" />
+                <p><a href="self.html">Akaay Kohli</a></p>
             </div>
             <div class="family-member">
                 <img
                     src="https://github.com/gautamdesigns/lab/blob/main/anushka.png?raw=true"
                     alt="Anushka Sharma"
-                    usemap="#anushkaMap"
-                    style="border: 10px double #000000; border-radius: 50%" />
-                <p
-                    style="
-                        font-family: 'Cooper', sans-serif;
-                        font-size: 18px;
-                        color: #333333;
-                    ">
-                    <a
-                        href="anushka.html"
-                        style="color: #000000; text-decoration: none"
-                        onmouseover="this.style.color='#ff0000'"
-                        onmouseout="this.style.color='#000000'"
-                        >Anushka Sharma</a
-                    >
-                </p>
+                    usemap="#anushkaMap" />
+                <p><a href="anushka.html">Anushka Sharma</a></p>
             </div>
         </div>
 
@@ -136,7 +118,7 @@
                 href="virat.html" />
         </map>
 
-        <map name="vamikafMap">
+        <map name="vamikaMap">
             <area
                 shape="rect"
                 coords="0,0,270,270"
@@ -159,20 +141,8 @@
         </map>
         <br /><br />
         <hr align="center" color="#ff4500" size="5" width="100%" />
-        <h2
-            style="
-                font-family: 'Cooper', sans-serif;
-                font-size: 50px;
-                color: #ec0cf0;
-            ">
-            Discover the Kohli Family
-        </h2>
-        <p
-            style="
-                font-family: 'Lucida Calligraphy', sans-serif;
-                font-size: 25px;
-                color: #ff4500;
-            ">
+        <h2>Discover the Kohli Family</h2>
+        <p class="discover-text">
             Greetings from the Kohli family! Our website is a window into the
             lives of our family members. From our shared experiences to
             individual passions. Please get to know each family member by
@@ -181,33 +151,11 @@
             share our stories, hobbies, and more with you!
         </p>
         <hr align="center" color="#ff4500" size="5" width="100%" />
-        <p
-            style="
-                font-family: 'Cooper', sans-serif;
-                font-size: 50px;
-                color: #22b322;
-            ">
-            Address
+        <p class="address-heading">Address</p>
+        <p class="address">
+            Omkar- 1973, 35th floor<br />C-wing<br />Worli, Mumbai<br />400018<br />Maharashtra<br />Bharat
+            🇮🇳
         </p>
-        <p
-            style="
-                font-family: 'Times New Roman', sans-serif;
-                font-size: 25px;
-                color: #000000;
-            ">
-            House Number<br />Street / Lane Number<br />Locality / Area<br />District<br />Pin
-            Code<br />State<br />Bharat 🇮🇳
-        </p>
-        <p style="font-family: 'Arial Black', sans-serif; font-size: 25px">
-            <a
-                href="tel:+910123456789"
-                style="color: #000000; text-decoration: none"
-                onmouseover="this.style.color='#ff0000'"
-                onmouseout="this.style.color='#000000'"
-                target="blank"
-                >+910123456789</a
-            >
-        </p>
-        <hr align="center" color="#000000" size="10" width="100%" />
+        <hr align="center" color="#ffffff" size="10" width="100%" />
     </body>
 </html>

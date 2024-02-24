@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reverse the digits of a number</title>
+        <style>
+            body {
+                background-color: #000000;
+                color: #ffffff;
+                font-family: "Poppins", sans-serif;
+                margin: 5vw;
+                text-align: center;
+                font-size: 2vw;
+            }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reverse the digits of a number</title>
-  <script type="text/javascript" src="9.js"></script>
-</head>
+            input {
+                width: 25vw;
+                height: 3vw;
+                font-size: 2vw;
+            }
 
-<body style="margin: 25px;font-size: 20px; font-family: 'Arial Unicode MS', sans-serif;">
-  <p style="font-size: 25px; font-family: 'Arial Black', sans-serif;">Reverse Number Generator</p>
-  <table>
-    <tr>
-      <td>Please enter any integer:</td>
-      <td><input type="text" id="num" name="num" style="width: 100px;" /></td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center"><button style="width: 80px;" onclick="Reverse_Num()">Reverse</button></td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <div id="result"></div>
-      </td>
-    </tr>
-  </table>
-</body>
+            button {
+                background-color: #3a3b3c;
+                color: #e4e6eb;
+                padding: 1vw;
+                border: none;
+                cursor: pointer;
+                border-radius: 30px;
+                font-family: "Anta", sans-serif;
+                font-size: 1.5vw;
+            }
 
+            button:hover {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            .result-box {
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #3a3b3c;
+                color: #ffffff;
+                border-radius: 10px;
+                font: 2vw "Anta", sans-serif;
+            }
+        </style>
+        <script>
+            function Reverse_Num() {
+                var inputNumber = document.getElementById("num").value;
+
+                // Check if the input is a valid integer
+                if (/^\d+$/.test(inputNumber)) {
+                    var reversedNumber = parseInt(inputNumber, 10)
+                        .toString()
+                        .split("")
+                        .reverse()
+                        .join("");
+
+                    document.getElementById("result").innerHTML =
+                        "Digits of the number in reverse order are " +
+                        reversedNumber;
+                } else {
+                    document.getElementById("result").innerHTML =
+                        "Please enter a valid integer.";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <p>Reverse Number Generator</p>
+        <table>
+            <tr>
+                <td>Please enter any integer :</td>
+                <td>
+                    <input type="text" id="num" name="num" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button onclick="Reverse_Num()">Reverse</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <div class="result-box" id="result"></div>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
