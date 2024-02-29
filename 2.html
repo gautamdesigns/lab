@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Favorite Movies and Songs</title>
+        <title>Movies and Songs</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -11,94 +11,206 @@
             rel="stylesheet" />
         <style>
             body {
-                background-color: #000000;
+                background: #000;
+                text-align: left;
                 padding: 0;
                 margin: 2vw;
-                font-family: "Anta", sans-serif;
-                color: #ffffff;
             }
 
             ol {
-                list-style-type: decimal;
-                font-size: 2.5vw;
+                list-style: decimal;
+                font: 2.5vw "Anta", sans-serif;
+                color: #fff;
                 margin: 2vw;
-                padding: 0;
+                padding: 2vw;
             }
 
             .text {
                 text-align: center;
-                font-size: 3vw;
-                color: #ffff00;
-                font-family: "Arial Black", sans-serif;
+                font: bold 3vw "Arial Black", sans-serif;
+                color: #ff0;
             }
 
             ul {
-                font-size: 20px;
-                text-align: left;
-                font-family: "Poppins", sans-serif;
-                padding: 2vw;
+                font: 1.5vw "Poppins", sans-serif;
+                padding: 0;
                 margin: 2vw;
-                color: #e4e6eb;
-                background-color: #3a3b3c;
-                border: 2px solid #ffffff;
+                background: #3a3b3c;
+                list-style: circle;
+            }
+
+            ul.singers {
+                list-style: disc;
+                padding: 2vw 0 0 5vw;
+                font-size: 2vw;
+                border: 2px solid #fff;
                 border-radius: 10px;
-                list-style-type: disc;
             }
         </style>
     </head>
     <body>
-        <p class="text">My Top Five Favorite Movies</p>
+        <p class="text">Movies and Songs</p>
         <div>
             <ol>
                 <li>
                     Article 370
-                    <ul>
-                        <li>"Aandhi" - Clinton Cerejo, Shahzad Ali</li>
-                        <li>"Dua" - Jubin Nautiyal, Priyanshi Naidu</li>
-                        <li>"Ishq Tera" - Sanjith Hegde, Shashwat Sachdev</li>
-                        <li>"Main Tujhe Phir Miloongi" - Vibha Saraf</li>
-                        <li>"Najariya LoFi Cake Mix" - Madhubanti Bagchi</li>
+                    <ul class="singers">
+                        <li>
+                            "Aandhi" -
+                            <ul>
+                                <li>Clinton Cerejo</li>
+                                <li>Shahzad Ali</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Dua" -
+                            <ul>
+                                <li>Jubin Nautiyal</li>
+                                <li>Priyanshi Naidu</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Ishq Tera" -
+                            <ul>
+                                <li>Sanjith Hegde</li>
+                                <li>Shashwat Sachdev</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Main Tujhe Phir Miloongi" -
+                            <ul>
+                                <li>Vibha Saraf</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Najariya LoFi Cake Mix" -
+                            <ul>
+                                <li>Madhubanti Bagchi</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
                 <li>
                     Fighter
-                    <ul>
-                        <li>"Sher Khul Gaye" - Benny Dayal, Shilpa Rao</li>
-                        <li>"Ishq Jaisa Kuch" - Shilpa Rao</li>
-                        <li>"Heer Aasmani" - Vishal Dadlani, B Praak</li>
+                    <ul class="singers">
                         <li>
-                            "Dil Banaane Waaleya" - Arijit Singh, Jonita Gandhi
+                            "Sher Khul Gaye" -
+                            <ul>
+                                <li>Benny Dayal</li>
+                                <li>Shilpa Rao</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Ishq Jaisa Kuch" -
+                            <ul>
+                                <li>Shilpa Rao</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Heer Aasmani" -
+                            <ul>
+                                <li>Vishal Dadlani</li>
+                                <li>B Praak</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Dil Banaane Waaleya" -
+                            <ul>
+                                <li>Arijit Singh</li>
+                                <li>Jonita Gandhi</li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
 
                 <li>
                     Crakk
-                    <ul>
-                        <li>"Dil Jhoom" - Vishal Mishra, Shreya Ghoshal</li>
-                        <li>"Rom Rom" - MC Square</li>
-                        <li>"Jeena Haraam" - Vishal Mishra, Shilpa Rao</li>
+                    <ul class="singers">
+                        <li>
+                            "Dil Jhoom" -
+                            <ul>
+                                <li>Vishal Mishra</li>
+                                <li>Shreya Ghoshal</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Rom Rom" -
+                            <ul>
+                                <li>MC Square</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Jeena Haraam" -
+                            <ul>
+                                <li>Vishal Mishra</li>
+                                <li>Shilpa Rao</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
                 <li>
                     Main Atal Hoon
-                    <ul>
-                        <li>"Ankaha" - Armaan Malik, Shreya Ghoshal</li>
-                        <li>"Desh Pehle" - Jubin Nautiyal</li>
-                        <li>"Ram Dhun" - Kailash Kher</li>
-                        <li>"Hindu Tan Man" - Kailash Kher</li>
+                    <ul class="singers">
+                        <li>
+                            "Ankaha" -
+                            <ul>
+                                <li>Armaan Malik</li>
+                                <li>Shreya Ghoshal</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Desh Pehle" -
+                            <ul>
+                                <li>Jubin Nautiyal</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Ram Dhun" -
+                            <ul>
+                                <li>Kailash Kher</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Hindu Tan Man" -
+                            <ul>
+                                <li>Kailash Kher</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
                 <li>
                     Teri Baaton Mein Aisa Uljha Jiya
-                    <ul>
-                        <li>"Gallan" - Talwinder, MC Square</li>
-                        <li>"Akhiyaan Gulaab" - Mitraz</li>
-                        <li>"Laal Peeli Akhiyaan" - Romy, Tanishk Bagchi</li>
-                        <li>"Tum Se" - Sachin Jigar, Raghav Chaitanya</li>
+                    <ul class="singers">
+                        <li>
+                            "Gallan" -
+                            <ul>
+                                <li>Talwinder</li>
+                                <li>MC Square</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Akhiyaan Gulaab" -
+                            <ul>
+                                <li>Mitraz</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Laal Peeli Akhiyaan" -
+                            <ul>
+                                <li>Romy</li>
+                                <li>Tanishk Bagchi</li>
+                            </ul>
+                        </li>
+                        <li>
+                            "Tum Se" -
+                            <ul>
+                                <li>Sachin Jigar</li>
+                                <li>Raghav Chaitanya</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ol>
