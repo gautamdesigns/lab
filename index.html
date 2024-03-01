@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -15,32 +15,54 @@
                 border-radius: 20px;
                 box-shadow: 0 0px 40px rgb(0 0 0);
             }
+
             .title {
                 font: 3vw "Arial Black", sans-serif;
                 color: #003366;
                 text-align: center;
             }
+
             hr {
                 border: none;
                 border-top: 5px solid #ff4500;
                 width: 100%;
             }
+
             .container {
                 display: inline-block;
                 padding: 0px;
                 margin: 20px;
             }
+
             ol {
                 color: #003366;
                 font: 1.8vw "Arial Unicode MS", sans-serif;
             }
+
             a {
                 color: #000;
                 text-decoration: none;
             }
+
             a:hover {
                 color: #f00;
             }
+
+            iframe.table {
+                width: 100%;
+                height: 330px;
+                border: none;
+                resize: none;
+                overflow: auto;
+            }
+            iframe {
+                width: 100%;
+                height: 707px;
+                border: none;
+                resize: none;
+                overflow: auto;
+            }
+
             .credits {
                 display: flex;
                 justify-content: center;
@@ -63,7 +85,7 @@
                 flex: 1;
                 text-align: left;
                 padding-left: 2vw;
-                font: 1.5vw "Arial Unicode MS", sans-serif;
+                font: 1.5vw "Cambria", sans-serif;
             }
 
             .version {
@@ -71,10 +93,66 @@
                 text-align: right;
                 font-size: 1.5vw;
             }
+
+            table {
+                text-align: center;
+                background-color: #000;
+                width: 100%;
+                border-bottom-left-radius: 14px;
+                border-bottom-right-radius: 14px;
+                box-shadow: 0 0px 40px rgb(0 0 0);
+                color: #fff;
+                font: 1.2vw "Arial", sans-serif;
+            }
+
+            table a {
+                color: #fff;
+                text-decoration: none;
+            }
+
             @media (max-width: 768px) {
+                .title {
+                    font: bold 10vw "Arial Black", sans-serif;
+                    color: #003366;
+                    text-align: center;
+                }
+
+                hr {
+                    border: none;
+                    border-top: 5px solid #ff4500;
+                    width: 100%;
+                }
+
+                .container {
+                    display: inline-block;
+                    padding: 0px;
+                    margin: 1.2vw;
+                }
+
+                ol {
+                    font: 5vw "Arial Unicode MS", sans-serif;
+                }
+
                 .image img {
                     width: 50vw;
                     height: auto;
+                }
+
+                .info {
+                    font: 3vw "Cambria", sans-serif;
+                }
+
+                .version {
+                    font-size: 3vw;
+                }
+
+                table {0 0);
+                    font: 3vw "Arial", sans-serif;
+                }
+
+                table a {
+                    color: #fff;
+                    text-decoration: none;
                 }
             }
         </style>
@@ -129,16 +207,14 @@
                         as align, border, bgcolor, colspan, rowspan,
                         cellspacing, cellpadding, background, width, and height)
                         wherever necessary. A specimen of the Time–Table is
-                        given below–</a
+                        given below -</a
                     >
+                    <br />
                     <iframe
-                        src="https://gautamdesigns.github.io/lab/3.html"
-                        width="100%"
-                        height="330px"
-                        frameborder="0"
-                        style="resize: none; overflow: hidden"></iframe>
+                        class="table"
+                        src="https://gautamdesigns.github.io/lab/3.html"></iframe>
                 </li>
-                <hr align="center" color="#ff4500" size="5" width="100%" />
+                <hr />
 
                 <li>
                     <a href="4_1.html"
@@ -149,14 +225,11 @@
                         footer section. After clicking link given in the left
                         panel, the appropriate content of that topic must be
                         displayed in place of the main page. (Use FRAMESET and
-                        FRAME Tag). A specimen of the website is given below–</a
-                    >
+                        FRAME Tag). A specimen of the website is given below
+                        -</a
+                    ><br /><br />
                     <iframe
-                        src="https://gautamdesigns.github.io/lab/4_1.html"
-                        width="100%"
-                        height="600px"
-                        frameborder="0"
-                        style="resize: none; overflow: hidden"></iframe>
+                        src="https://gautamdesigns.github.io/lab/4_1.html"></iframe>
                 </li>
                 <hr />
 
@@ -269,54 +342,17 @@
             </div>
         </div>
         <div class="version">Last Updated on 01/03/2024</div>
-        <table
-            align="center"
-            bgcolor="black"
-            width="100%"
-            style="
-                border-bottom-right-radius: 15px;
-                border-bottom-left-radius: 15px;
-                box-shadow: 0 0px 40px rgb(0 0 0);
-            ">
+        <table>
             <tr>
                 <td align="center" valign="middle">
                     <h4>
-                        <font color="white"
-                            ><a
-                                href="tac.html"
-                                style="
-                                    color: #ffffff;
-                                    text-decoration: none;
-                                    font-family: Arial;
-                                "
-                                onmouseover=" this.style.color='#ff0000'"
-                                onmouseout=" this.style.color='#ffffff'"
-                                >Terms and Conditions</a
-                            >
-                            |
-                            <a
-                                href="pp.html"
-                                style="
-                                    color: #ffffff;
-                                    text-decoration: none;
-                                    font-family: Arial;
-                                "
-                                onmouseover=" this.style.color='#ff0000'"
-                                onmouseout=" this.style.color='#ffffff'"
-                                >Privacy Policy</a
-                            ></font
-                        >
+                        <a href="tac.html">Terms and Conditions</a>
+                        |
+                        <a href="pp.html">Privacy Policy</a>
                     </h4>
                     <p>
-                        <font
-                            style="
-                                text-decoration: none;
-                                color: #fff;
-                                font-family: Arial;
-                            "
-                            >© 2024 All rights reserved.<br />Crafted by
-                            <b>Gautam Kumar</b> with <b>❤</b> and code.</font
-                        >
+                        © 2024 All rights reserved.<br />Crafted by
+                        <b>Gautam Kumar</b> with <b>❤</b> and code.
                     </p>
                 </td>
             </tr>
