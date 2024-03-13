@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Get the Current Date</title>
-        <style>
-            body {
-                background-color: #000000;
-                color: #ffffff;
-                font-family: "Poppins", sans-serif;
-                margin: 5vw;
-                text-align: center;
-                font-size: 2vw;
-            }
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Get the Current Date</title>
+		<style>
+			body {
+				background-color: #000000;
+				color: #ffffff;
+				font-family: "Poppins", sans-serif;
+				margin: 5vw;
+				text-align: center;
+				font-size: 2vw;
+			}
 
-            button {
-                background-color: #3a3b3c;
-                color: #e4e6eb;
-                padding: 20px 20px;
-                border: none;
-                cursor: pointer;
-                border-radius: 30px;
-                font-family: "Anta", sans-serif;
-                font-size: 1.5vw;
-            }
+			button {
+				background-color: #3a3b3c;
+				color: #e4e6eb;
+				padding: 20px 20px;
+				border: none;
+				cursor: pointer;
+				border-radius: 30px;
+				font-family: "Anta", sans-serif;
+				font-size: 1.5vw;
+			}
 
-            button:hover {
-                background-color: #ffffff;
-                color: #000000;
-            }
+			button:hover {
+				background-color: #ffffff;
+				color: #000000;
+			}
 
-            .result-box {
-                margin-top: 20px;
-                padding: 20px;
-                background-color: #3a3b3c;
-                color: #ffffff;
-                border-radius: 10px;
-                font-family: "Anta", sans-serif;
-                font-size: 1.5vw;
-            }
-        </style>
-        <script>
-            function show_current_date() {
-                var today = new Date();
-                var dd = today.getDate();
-                var mm = today.getMonth() + 1;
-                var yyyy = today.getFullYear();
+			.result-box {
+				margin-top: 20px;
+				padding: 20px;
+				background-color: #3a3b3c;
+				color: #ffffff;
+				border-radius: 10px;
+				font-family: "Anta", sans-serif;
+				font-size: 1.5vw;
+			}
+			@media (max-width: 767px) {
+				body {
+					font-size: 5vw;
+				}
 
-                if (dd < 10) {
-                    dd = "0" + dd;
-                }
-                if (mm < 10) {
-                    mm = "0" + mm;
-                }
-                today = mm + "-" + dd + "-" + yyyy;
-                document.getElementById("Curr_Dat1").innerHTML = today;
+				button {
+					font-size: 3vw;
+				}
+				.result-box {
+					font-size: 5vw;
+				}
+			}
+		</style>
+		<script>
+			function show_current_date() {
+				var today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth() + 1;
+				var yyyy = today.getFullYear();
 
-                today = mm + "/" + dd + "/" + yyyy;
-                document.getElementById("Curr_Dat2").innerHTML = today;
+				if (dd < 10) {
+					dd = "0" + dd;
+				}
+				if (mm < 10) {
+					mm = "0" + mm;
+				}
+				today = mm + "-" + dd + "-" + yyyy;
+				document.getElementById("Curr_Dat1").innerHTML = today;
 
-                today = dd + "-" + mm + "-" + yyyy;
-                document.getElementById("Curr_Dat3").innerHTML = today;
+				today = mm + "/" + dd + "/" + yyyy;
+				document.getElementById("Curr_Dat2").innerHTML = today;
 
-                today = dd + "/" + mm + "/" + yyyy;
-                document.getElementById("Curr_Dat4").innerHTML = today;
-            }
-        </script>
-    </head>
+				today = dd + "-" + mm + "-" + yyyy;
+				document.getElementById("Curr_Dat3").innerHTML = today;
 
-    <body>
-        <p>Click the button to show current date in various formats.</p>
-        <button onclick="show_current_date()">Show current date</button>
-        <br /><br />
-        <div class="result-box" id="Curr_Dat1"></div>
-        <div class="result-box" id="Curr_Dat2"></div>
-        <div class="result-box" id="Curr_Dat3"></div>
-        <div class="result-box" id="Curr_Dat4"></div>
-    </body>
+				today = dd + "/" + mm + "/" + yyyy;
+				document.getElementById("Curr_Dat4").innerHTML = today;
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>Click the button to show current date in various formats.</p>
+		<button onclick="show_current_date()">Show current date</button>
+		<br /><br />
+		<div class="result-box" id="Curr_Dat1"></div>
+		<div class="result-box" id="Curr_Dat2"></div>
+		<div class="result-box" id="Curr_Dat3"></div>
+		<div class="result-box" id="Curr_Dat4"></div>
+	</body>
 </html>
